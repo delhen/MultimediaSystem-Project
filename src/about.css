@@ -1,0 +1,111 @@
+body{
+    box-sizing: border-box;
+}
+
+.heads{
+    background-color: white;
+    text-align: center;
+}
+
+.navbar-c{
+    background-color: forestgreen;
+    font-size: 16px;
+}
+
+.navbar-c > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-c > ul > li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none !important;
+} 
+
+li a:hover, .dropdown-cstm:hover .dropbtn {
+    color: white;
+    background-color: #004D00;
+    text-decoration: none !important;
+}
+
+li .dropdown-cstm{
+    display: inline-block;
+}
+
+.drop-content{
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+}
+
+.drop-content a{
+    display: block;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.drop-content a:hover{
+    background-color: #ACACAC;
+}
+
+.dropdown-cstm:hover .drop-content{
+    display: block;
+}
+
+.intro > img{
+    width: 100%;
+}
+
+.intro > div{
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+    text-align: center;
+}
+
+.intro h1{
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.intro > div img{
+    margin-bottom: 20px;
+}
+
+.intro > div img::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.star-list > i{
+    font-size: 60px;
+    color: rgba(34,181,115,1);
+}
+
+.star-list{
+    margin-bottom: 25px;
+}
+
+.intro > div:last-child{
+    margin: 5w0px 0;
+}
+
+footer{
+    background-color: rgb(39, 44, 39);
+    font-family: 'Montserrat', 'Font Awesome 5 Free', sans-serif;
+    color: white;
+    padding: 30px;
+}

@@ -1,0 +1,91 @@
+body{
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(23,148,20,1) 0%, rgba(157,253,45,1) 100%);
+    height: 100vh;
+}
+
+.heads{
+    background-color: white;
+    text-align: center;
+}
+
+.navbar-c{
+    background-color: forestgreen;
+    font-size: 16px;
+}
+
+.navbar-c > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-c > ul > li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none !important;
+} 
+
+li a:hover, .dropdown-cstm:hover .dropbtn {
+    color: white;
+    background-color: #004D00;
+    text-decoration: none !important;
+}
+
+li .dropdown-cstm{
+    display: inline-block;
+}
+
+.drop-content{
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+}
+
+.drop-content a{
+    display: block;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.drop-content a:hover{
+    background-color: #ACACAC;
+}
+
+.dropdown-cstm:hover .drop-content{
+    display: block;
+}
+
+.headers{
+   display: grid;
+   grid-template-columns: auto auto auto;
+   width: 100%;
+   text-align: center;
+}
+
+.grid-item{
+    padding: 100px;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.headers img:hover{
+    width: 80%;
+}

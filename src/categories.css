@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Roboto+Condensed&display=swap');
+
+header{
+    text-align: center;
+    margin: 5px;
+}
+
+.navbar-c{
+    background-color: forestgreen;
+    font-size: 16px;
+}
+
+.navbar-c > ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar-c > ul > li{
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none !important;
+}   
+
+li a:hover, .dropdown-cstm:hover .dropbtn {
+    color: white;
+    background-color: #004D00;
+    text-decoration: none !important;
+}
+
+li .dropdown-cstm{
+    display: inline-block;
+}
+
+.drop-content{
+    width: 200px;
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+}
+
+.drop-content a{
+    display: block;
+    color: white;
+    padding: 10px 14px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.drop-content a:hover{
+    background-color: #ACACAC;
+}
+
+.dropdown-cstm:hover .drop-content{
+    display: block;
+}
+
+.tittle-box{
+
+    background-color: grey;
+    color: white;
+    width: 180px;
+    padding: 4px 10px;
+    height: 40px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.tittle-box h2{
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.tittle-box::after{
+    content: '';
+    border-top: 40px solid grey;
+    border-right: 50px solid transparent;
+    position: absolute;
+    display: flex;
+    margin-top: -4px;
+    margin-left: 170px;
+}
+
+.product-top{
+    width: 100%;
+}
+
+.overlay-right{
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-left: 0;
+    width: 70px;
+}
+
+.overlay-right .fa{
+    cursor: pointer;
+    background-color:  black;
+    color: white;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    padding: 7px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.overlay-right .btn-secondary{
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.product-top:hover .overlay-right{
+    opacity: 1;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+.crt{
+    width: 500px;
+    height: 300px;
+    overflow-y: scroll;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px !important;
+}
+
+.crt-clm{
+  
+    text-align: center;
+    border-bottom: 1px solid white;
+    width: 33.3%;
+    margin: 5px 5px 5px 0;
+    padding-bottom: 5px;
+}
+
+.crt-row{
+    display: flex;
+}
+
+.dropdown-cstm > .drop-content .crt{
+    padding: 10px;
+}
+
+.crt-clm > input{
+    width: 50px;
+}
+
+.crt-total{
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
